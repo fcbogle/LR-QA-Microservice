@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stormpath.spring:stormpath-spring-security-webmvc:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-spring-security-webmvc/1.2.0/908612b21666cc4d45c549d6f02a39e5ef7f8ab8/stormpath-spring-security-webmvc-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-spring-security-webmvc/1.2.0/b18293ffd040e8d96cee6c01397d39f11ab98090/stormpath-spring-security-webmvc-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

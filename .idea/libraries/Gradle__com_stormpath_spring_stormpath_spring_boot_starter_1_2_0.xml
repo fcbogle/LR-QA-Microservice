@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stormpath.spring:stormpath-spring-boot-starter:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-spring-boot-starter/1.2.0/35d53f4c33962117c2342f3825126dfd7979a7a7/stormpath-spring-boot-starter-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-spring-boot-starter/1.2.0/13feb1eef5ddbc2d16ab75bcf5b610c1ed8364f3/stormpath-spring-boot-starter-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

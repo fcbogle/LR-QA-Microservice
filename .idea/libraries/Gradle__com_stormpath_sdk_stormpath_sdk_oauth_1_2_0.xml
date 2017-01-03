@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stormpath.sdk:stormpath-sdk-oauth:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.sdk/stormpath-sdk-oauth/1.2.0/1a76a9492ed4ec913403dc5ee59fa9aab7a46129/stormpath-sdk-oauth-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.sdk/stormpath-sdk-oauth/1.2.0/8d8cf3bf5017d263002d6e96d6e66f51087d1741/stormpath-sdk-oauth-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stormpath.spring:stormpath-thymeleaf-spring-boot-starter:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-thymeleaf-spring-boot-starter/1.2.0/30bd15409d6eb37e44d13870a307c17913c0f60c/stormpath-thymeleaf-spring-boot-starter-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.stormpath.spring/stormpath-thymeleaf-spring-boot-starter/1.2.0/3d16f01dfc1e14fcc123b85d3041de0b83b8de38/stormpath-thymeleaf-spring-boot-starter-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
