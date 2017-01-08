@@ -1,6 +1,7 @@
 package org.frank.bogle.config;
 
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -9,6 +10,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @Configuration
 @EnableAspectJAutoProxy
-@Aspect
 public class AspectConfig {
+
+    @Pointcut("execution(void org.frank.bogle.config.StormpathConfig.stormpathRequestEventListener())")
+    public void stormpathRegisterMonitor(){}
 }
