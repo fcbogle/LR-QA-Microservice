@@ -1,6 +1,7 @@
 package org.frank.bogle.config;
 
 import org.frank.bogle.filter.PreAuthenticationFilter;
+import org.frank.bogle.model.LRPerson;
 import org.frank.bogle.service.LRPersonService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,21 +22,49 @@ public class ContextConfig {
 
     private ApplicationContext context;
     private Logger logger = LoggerFactory.getLogger(ContextConfig.class);
+    private LRPersonService lrPersonService;
 
     @Autowired
-    public ContextConfig(ApplicationContext context) {
+    public ContextConfig(ApplicationContext context,
+                         LRPersonService lrPersonService) {
         this.context = context;
+        this.lrPersonService = lrPersonService;
     }
 
     @PostConstruct
     public void getBeanDetails() {
-        PreAuthenticationFilter filter = (PreAuthenticationFilter) context.getBean("preAuthenticationFilter");
+        //PreAuthenticationFilter filter = (PreAuthenticationFilter) context.getBean("preAuthenticationFilter");
         LRPersonService service = (LRPersonService) context.getBean("LRPersonService");
-        String filterClassName = filter.getClass().getName();
+        //String filterClassName = filter.getClass().getName();
         String serviceClassName = service.getClass().getName();
-        logger.info("ContextConfig Bean Details :::: PreAuthenticationFilter FilterClassName: " + filterClassName);
+        //logger.info("ContextConfig Bean Details :::: PreAuthenticationFilter FilterClassName: " + filterClassName);
         logger.info("ContextConfig Bean Details :::: LRPersonService FilterClassName: " + serviceClassName);
         //System.out.println(Arrays.asList(context.getBeanDefinitionNames()));
+    }
+
+    @PostConstruct
+    public void createSamplePerson() {
+
+        logger.info("INFO :::: ContextConfig Creating Sample Person");
+
+        this.lrPersonService.deleteAllPersons();
+
+        LRPerson person;
+
+        try {
+            person = new LRPerson();
+            person.setFirstName("Test First Name");
+            person.setLastName("Test Last Name");
+            person.setEmail("test@test.com");
+            person.setLrBusiness("Marine and Offshore");
+            person.setLrProject("Test BOS");
+            person.setUserName("tester");
+
+            this.lrPersonService.saveLrPerson(person);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

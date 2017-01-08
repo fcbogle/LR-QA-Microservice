@@ -24,16 +24,19 @@ public class LRPersonService {
         this.lrPersonRepository = lrPersonRepository;
     }
 
-    @Transactional
     public void saveLrPerson(LRPerson lrPerson) {
         logger.info("LRPersonService method saveLrPerson() invoked: " + LocalDateTime.now());
         this.lrPersonRepository.save(lrPerson);
     }
 
-    @Transactional
     public LRPerson findLrPersonById(String id) {
         logger.info("LRPersonService method findLrPersonById() invoked: " + LocalDateTime.now());
         LRPerson person = this.lrPersonRepository.findOne(id);
         return person;
+    }
+
+    public void deleteAllPersons() {
+        logger.info("LRPersonService method deleteAllPersons() invoked: " + LocalDateTime.now());
+        this.lrPersonRepository.deleteAll();
     }
 }

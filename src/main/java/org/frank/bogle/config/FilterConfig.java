@@ -21,9 +21,11 @@ public class FilterConfig {
         this.stormpathAuthenticationProvider = stormpathAuthenticationProvider;
     }
 
+    /**
     @Profile({"development"})
     @Bean
     public PreAuthenticationFilter preAuthenticationFilter() {
         return new PreAuthenticationFilter(stormpathAuthenticationProvider);
     }
+    */
 }
