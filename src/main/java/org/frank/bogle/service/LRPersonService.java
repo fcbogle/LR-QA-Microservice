@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Created by frankbogle on 20/12/2016.
@@ -38,5 +39,11 @@ public class LRPersonService {
     public void deleteAllPersons() {
         logger.info("LRPersonService method deleteAllPersons() invoked: " + LocalDateTime.now());
         this.lrPersonRepository.deleteAll();
+    }
+
+    public List<LRPerson> getAllPersons() {
+        logger.info("LRPersonService method getAllPersons() invoked: " + LocalDateTime.now());
+        List<LRPerson> persons = this.lrPersonRepository.findAll();
+        return persons;
     }
 }
