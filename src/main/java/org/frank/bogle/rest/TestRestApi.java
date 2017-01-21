@@ -3,10 +3,13 @@ package org.frank.bogle.rest;
 import org.frank.bogle.model.LRPerson;
 import org.frank.bogle.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponents;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 
@@ -42,9 +45,21 @@ public class TestRestApi {
         ResponseEntity<String> response = restTemplate.postForEntity(uri, person, String.class);
 
         return response;
-
     }
 
+    public Person singlePerson(String id) {
+        String uri = UriComponentsBuilder.newInstance()
+                .scheme("http")
+                .host("yapreunion30.cfapps.io")
+                .path("/person/{id}")
+                .build()
+                .expand(id)
+                .toUriString();
 
+        HttpEntity<Person> entity = restTemplate.getForEntity(uri, Person.class);
+        Person person = entity.getBody();
+
+        return person;
+    }
 
 }

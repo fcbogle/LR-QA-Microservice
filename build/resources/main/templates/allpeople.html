@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/frank-theme.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>All People</h1>
+    </div>
+
+    <div data-role="content" data-theme="a">
+        <ul data-role="listview">
+            <li th:each="p : ${people}">
+                <a th:href="${p.link.href}"
+                   th:text="${p.person.firstName} + ' ' +  ${p.person.lastName}"/>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div data-role="footer" data-theme="a">
+    <h5><small>&copy; digitalPilgrim 2016 Ltd</small></h5>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class test.frank.bogle.restapi.RestTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class test.frank.bogle.restapi.RestTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/test.frank.bogle.restapi.html">test.frank.bogle.restapi</a> &gt; RestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.463s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testMultipleGetPersons</td>
+<td>0.220s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMultipleStatusCode</td>
+<td>0.243s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:35:27.013 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class test.frank.bogle.restapi.RestTest]
+10:35:27.013 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+10:35:27.014 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+10:35:27.014 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [test.frank.bogle.restapi.RestTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+10:35:27.014 [Test worker] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@49bcb363 declaringClass = 'test.frank.bogle.restapi.RestTest', classes = '{class org.frank.bogle.config.RestConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+10:35:27.018 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [test.frank.bogle.restapi.RestTest]
+10:35:27.018 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [test.frank.bogle.restapi.RestTest]: using defaults.
+10:35:27.022 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10:35:27.022 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@62eb1633, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@46097fa3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7d431913, org.springframework.test.context.support.DirtiesContextTestExecutionListener@63e8411, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cde506b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3127d434, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@54c9c882, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2625c006, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@683691a1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@673f6ee7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7d28275a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7505fd09]
+10:35:27.022 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestTest]
+10:35:27.023 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestTest]
+10:35:27.023 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestTest]
+10:35:27.024 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestTest]
+10:35:27.024 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+10:35:27.024 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestTest]
+10:35:27.024 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestTest]
+10:35:27.025 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@9182907, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+10:35:27.025 [Test worker] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+10:35:27.025 [Test worker] DEBUG org.springframework.test.context.support.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+10:35:27.026 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+10:35:27.026 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+10:35:27.026 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+10:35:27.027 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoader - Registering annotated classes: {class org.frank.bogle.config.RestConfig}
+10:35:27.028 [Test worker] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@53af6098: startup date [Sat Jan 21 10:35:27 GMT 2017]; root of context hierarchy
+10:35:27.028 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Bean factory for org.springframework.context.support.GenericApplicationContext@53af6098: org.springframework.beans.factory.support.DefaultListableBeanFactory@6cfecd25: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,restConfig,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor]; root of factory hierarchy
+10:35:27.029 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.029 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.029 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+10:35:27.029 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.030 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method org.frank.bogle.config.RestConfig.builder()
+10:35:27.030 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method org.frank.bogle.config.RestConfig.restTemplate()
+10:35:27.031 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced org.frank.bogle.config.RestConfig; enhanced class name is: org.frank.bogle.config.RestConfig$$EnhancerBySpringCGLIB$$ad48927a
+10:35:27.031 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'restConfig' existing class 'org.frank.bogle.config.RestConfig' with enhanced class 'org.frank.bogle.config.RestConfig$$EnhancerBySpringCGLIB$$ad48927a'
+10:35:27.031 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.031 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.033 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor' to allow for resolving potential circular references
+10:35:27.034 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.035 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.036 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.036 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+10:35:27.036 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.037 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.037 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.037 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+10:35:27.037 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.037 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+10:35:27.038 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor' to allow for resolving potential circular references
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer$PropertyMappingCheckBeanPostProcessor'
+10:35:27.039 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@69a84555]
+10:35:27.040 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@43fe28c2]
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6cfecd25: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,restConfig,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,builder,restTemplate]; root of factory hierarchy
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.040 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.041 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+10:35:27.042 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.042 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.042 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.042 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+10:35:27.043 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.043 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'restConfig'
+10:35:27.043 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'restConfig'
+10:35:27.044 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'restConfig' to allow for resolving potential circular references
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'restConfig'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'builder'
+10:35:27.046 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'builder'
+10:35:27.047 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.047 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'builder' to allow for resolving potential circular references
+10:35:27.048 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'builder'
+10:35:27.048 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'restTemplate'
+10:35:27.049 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'restTemplate'
+10:35:27.049 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.049 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+10:35:27.054 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'restTemplate' to allow for resolving potential circular references
+10:35:27.057 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'restTemplate'
+10:35:27.058 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.066 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@43db2859]
+10:35:27.066 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+10:35:27.066 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+10:35:27.066 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.066 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 2]
+10:35:27.068 [Test worker] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'test.frank.bogle.restapi.RestTest': AutowiredFieldElement for private org.springframework.web.client.RestTemplate test.frank.bogle.restapi.RestTest.restTemplate
+10:35:27.068 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.068 [Test worker] DEBUG org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'test.frank.bogle.restapi.RestTest' to bean named 'restTemplate'
+10:35:27.069 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@9182907, testMethod = testMultipleStatusCode@RestTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+10:35:27.071 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.071 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 2]
+10:35:27.071 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.071 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.071 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.071 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.072 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+10:35:27.072 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for &quot;http://yapreunion30.cfapps.io/getrestpersons&quot;
+10:35:27.072 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+10:35:27.073 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+10:35:27.073 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+10:35:27.073 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+10:35:27.073 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+10:35:27.073 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://yapreunion30.cfapps.io:80
+10:35:27.073 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to yapreunion30.cfapps.io/34.192.77.235:80
+10:35:27.191 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.64:58569&lt;-&gt;34.192.77.235:80
+10:35:27.192 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /getrestpersons HTTP/1.1
+10:35:27.192 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+10:35:27.192 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; GET /getrestpersons HTTP/1.1
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept: application/json, application/*+json
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Host: yapreunion30.cfapps.io
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Connection: Keep-Alive
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)
+10:35:27.192 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip,deflate
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;GET /getrestpersons HTTP/1.1[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: yapreunion30.cfapps.io[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+10:35:27.192 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+10:35:27.304 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 302 Found[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Sat, 21 Jan 2017 10:35:26 GMT[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Application-Context: yapreunion30:cloud:0[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Vcap-Request-Id: 4d4cb33f-8807-47c5-6fb1-b1c20a54dd10[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Xss-Protection: 1; mode=block[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;transfer-encoding: chunked[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;2332[\r][\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[ {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;578ff89291963c22d26659df&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;fcbogle@gmail.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Frank&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bogle&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07714711103&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5790af7791963c22d26659e0&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;vladimirfelzmann@rcdow.org.uk&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;vladimir&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;felzmann&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;020 8981 9697&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57910afe91963c22d26659e1&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;fionamab@tiscali.co.uk&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Fiona&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bogle&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07881902489&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5798a064bb0646b2049112fe&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;jmcmahon059@aol.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Julie&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;McMahon&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;2077989381&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57992f483b7a1f0f276f6da3&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;moloneyanne@hotmail.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Anne &quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Moloney&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07985943169&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579937423b7a1f0f276f6da4&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;william.carson@ldblondon.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;William&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Carson&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07734220058&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799b1b53b7a1f0f276f6da5&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;rjmvidal@btinternet.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Royer&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Vidal&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07760380313&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799f02b3b7a1f0f276f6da6&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bennett nee rea&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799f02c3b7a1f0f276f6da7&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bennett nee rea&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579e2d5c3b7a1f0f276f6da8&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;elizabethsimpson90@hotmail.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Liz&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Simpson&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077661 98661&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579fc99a3b7a1f0f276f6da9&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;alanjryan@me.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Alan&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Ryan&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07795418468&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57b72c95af46f1736a7b9c36&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;vtowers@tiscali.co.uk&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Veronica&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Towers&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;0208 767 3796&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c31a9063a627ba38791b19&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;barbara@gompels.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Barbara&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Gompels&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07738131451&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c3d7b663a627ba38791b1a&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;wiffywillis@gmail.com&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rosie&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Willis&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07957571199&quot;[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c5439263a627ba38791b1b&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;familywalsh@uwclub.net&quot;,[\n]&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;David &quot;&quot;
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 302 Found
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/json;charset=UTF-8
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Date: Sat, 21 Jan 2017 10:35:26 GMT
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Expires: 0
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Application-Context: yapreunion30:cloud:0
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Frame-Options: DENY
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Vcap-Request-Id: 4d4cb33f-8807-47c5-6fb1-b1c20a54dd10
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Xss-Protection: 1; mode=block
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; transfer-encoding: chunked
+10:35:27.305 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Connection: keep-alive
+10:35:27.306 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+10:35:27.306 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for &quot;http://yapreunion30.cfapps.io/getrestpersons&quot; resulted in 302 (Found)
+10:35:27.306 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class [Lorg.frank.bogle.model.Person;] as &quot;application/json;charset=UTF-8&quot; using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@60eff511]
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Walsh&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01892 545058&quot;[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c57e2a63a627ba38791b1c&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rea&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57cfbd34a5ce74d19de4fcb6&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Joyce&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Eidiale&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07570 631902&quot;[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d1d5a840d83c007ea2d5b7&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;tony.davids@ntlworld.com&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Tony&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davids&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07976278203&quot;[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d1d5a840d83c007ea2d5b8&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;tony.davids@ntlworld.com&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Tony&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davids&quot;,[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07976278203&quot;[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.307 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d54b497a7eb441514b3910&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Clairejmbetts@aol.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Claire&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Betts&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07999481738&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d641887a7eb441514b3911&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;elizabethsimpson90@hotmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Liz&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Simpson&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077661 98661&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d683457a7eb441514b3912&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;JacquelineAKelly@hotmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Jacqueline&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Kelly&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01442 257609&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57ddaac77a7eb441514b3913&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Catherine &quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Scott&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;0207 589 1377&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57dede5e7a7eb441514b3914&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;only.jay1971@gmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Janis&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Dieterhart&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;N/a&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57dedf1c7a7eb441514b3915&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Phillipa &amp; Damian &quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Keeling &quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;+44 7929 616378&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e2aa4f7cc07e53dbda7121&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;cathycymru@hotmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Cathy&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davies&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07975907860&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e2ab2c7cc07e53dbda7122&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;andreafitzwilliam@hotmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Andrea&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Fitzwilliam&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e301007cc07e53dbda7123&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;rnmorris55@gmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Nick&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Morris&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07505904987&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e3015c7cc07e53dbda7124&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;morrisfamily@john-lewis.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Deirdre&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Morris&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07742016006&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;580394227662aef9ded7cfa2&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;marvin.severin@blueyonder.co.uk&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Marvin (female)&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Severin&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07766 059 277&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5805e67c7662aef9ded7cfa3&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;john@tangney-tours.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;John&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Tangney&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01732886666&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5806857d7662aef9ded7cfa4&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;patrickneal@hotmail.co.uk&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Patrick&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Neal&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07879256276&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;580a04527662aef9ded7cfa5&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;catherinetheresescott@gmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Catherine&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Scott&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;02075891377&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;581083952730568648afa586&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;mconmee@gmail.com&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Monica&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Conmee&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07713637953&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587a9513fbce690014981889&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587a9618fbce69001498188a&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587abfeafbce69001498188b&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5880eb1efbce69001498188c&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588118e29f0ae10014790e3f&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588119449f0ae10014790e40&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588119f29f0ae10014790e41&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5881318a3392b9000d1e28d8&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825962a518db000e9c76ee&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5882598aa518db000e9c76ef&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825a6b651bcc000e233fc6&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825a86651bcc000e233fc7&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825bfc651bcc000e233fc8&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58826067651bcc000e233fc9&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588275cc651bcc000e233fca&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58827720651bcc000e233fcb&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58832bf0651bcc000e233fcc&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5883396e651bcc000e233fcd&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.308 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.309 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.309 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.309 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;} ]&quot;
+10:35:27.310 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.310 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;0[\r][\n]&quot;
+10:35:27.310 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.310 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80] can be kept alive indefinitely
+10:35:27.310 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+10:35:27.310 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.310 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 2]
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.311 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+10:35:27.311 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.311 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 2]
+10:35:27.311 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.311 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 2]
+10:35:27.312 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@9182907, testMethod = testMultipleStatusCode@RestTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+10:35:27.312 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestTest]
+10:35:27.312 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestTest]
+10:35:27.312 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@12fccc6c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+10:35:27.312 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.312 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 2]
+10:35:27.312 [Test worker] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'test.frank.bogle.restapi.RestTest': AutowiredFieldElement for private org.springframework.web.client.RestTemplate test.frank.bogle.restapi.RestTest.restTemplate
+10:35:27.312 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.312 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@12fccc6c, testMethod = testMultipleGetPersons@RestTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+10:35:27.313 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.313 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 2]
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.313 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+10:35:27.313 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for &quot;http://yapreunion30.cfapps.io/getrestpersons&quot;
+10:35:27.313 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+10:35:27.313 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+10:35:27.313 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+10:35:27.313 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+10:35:27.313 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+10:35:27.313 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /getrestpersons HTTP/1.1
+10:35:27.313 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+10:35:27.313 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+10:35:27.313 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; GET /getrestpersons HTTP/1.1
+10:35:27.313 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept: application/json, application/*+json
+10:35:27.313 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Host: yapreunion30.cfapps.io
+10:35:27.313 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Connection: Keep-Alive
+10:35:27.313 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)
+10:35:27.314 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &gt;&gt; Accept-Encoding: gzip,deflate
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;GET /getrestpersons HTTP/1.1[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept: application/json, application/*+json[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Host: yapreunion30.cfapps.io[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+10:35:27.314 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &gt;&gt; &quot;[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;HTTP/1.1 302 Found[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Date: Sat, 21 Jan 2017 10:35:26 GMT[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Expires: 0[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Pragma: no-cache[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Application-Context: yapreunion30:cloud:0[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Frame-Options: DENY[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Vcap-Request-Id: b8f7dce4-3eb7-4fd7-5eef-6fa902060c02[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;X-Xss-Protection: 1; mode=block[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;transfer-encoding: chunked[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;2332[\r][\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[ {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;578ff89291963c22d26659df&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;fcbogle@gmail.com&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Frank&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bogle&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07714711103&quot;[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5790af7791963c22d26659e0&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;vladimirfelzmann@rcdow.org.uk&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;vladimir&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;felzmann&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;020 8981 9697&quot;[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57910afe91963c22d26659e1&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;fionamab@tiscali.co.uk&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Fiona&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bogle&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07881902489&quot;[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5798a064bb0646b2049112fe&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;jmcmahon059@aol.com&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Julie&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;McMahon&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;2077989381&quot;[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57992f483b7a1f0f276f6da3&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;moloneyanne@hotmail.com&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Anne &quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Moloney&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07985943169&quot;[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579937423b7a1f0f276f6da4&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;william.carson@ldblondon.com&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;William&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Carson&quot;,[\n]&quot;
+10:35:27.428 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07734&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; HTTP/1.1 302 Found
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Content-Type: application/json;charset=UTF-8
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Date: Sat, 21 Jan 2017 10:35:26 GMT
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Expires: 0
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Pragma: no-cache
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Application-Context: yapreunion30:cloud:0
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Content-Type-Options: nosniff
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Frame-Options: DENY
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Vcap-Request-Id: b8f7dce4-3eb7-4fd7-5eef-6fa902060c02
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; X-Xss-Protection: 1; mode=block
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; transfer-encoding: chunked
+10:35:27.429 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 &lt;&lt; Connection: keep-alive
+10:35:27.429 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+10:35:27.429 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for &quot;http://yapreunion30.cfapps.io/getrestpersons&quot; resulted in 302 (Found)
+10:35:27.429 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class [Lorg.frank.bogle.model.Person;] as &quot;application/json;charset=UTF-8&quot; using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@60eff511]
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;220058&quot;[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799b1b53b7a1f0f276f6da5&quot;,[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;rjmvidal@btinternet.com&quot;,[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Royer&quot;,[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Vidal&quot;,[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07760380313&quot;[\n]&quot;
+10:35:27.429 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799f02b3b7a1f0f276f6da6&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bennett nee rea&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5799f02c3b7a1f0f276f6da7&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Bennett nee rea&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579e2d5c3b7a1f0f276f6da8&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;elizabethsimpson90@hotmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Liz&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Simpson&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077661 98661&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;579fc99a3b7a1f0f276f6da9&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;alanjryan@me.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Alan&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Ryan&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07795418468&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57b72c95af46f1736a7b9c36&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;vtowers@tiscali.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Veronica&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Towers&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;0208 767 3796&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c31a9063a627ba38791b19&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;barbara@gompels.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Barbara&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Gompels&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07738131451&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c3d7b663a627ba38791b1a&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;wiffywillis@gmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rosie&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Willis&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07957571199&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c5439263a627ba38791b1b&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;familywalsh@uwclub.net&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;David &quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Walsh&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01892 545058&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57c57e2a63a627ba38791b1c&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;realucy@yahoo.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Lucy&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rea&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07971461917&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57cfbd34a5ce74d19de4fcb6&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Joyce&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Eidiale&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07570 631902&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d1d5a840d83c007ea2d5b7&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;tony.davids@ntlworld.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Tony&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davids&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07976278203&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d1d5a840d83c007ea2d5b8&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;tony.davids@ntlworld.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Tony&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davids&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07976278203&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d54b497a7eb441514b3910&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Clairejmbetts@aol.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Claire&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Betts&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07999481738&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d641887a7eb441514b3911&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;elizabethsimpson90@hotmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Liz&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Simpson&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077661 98661&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57d683457a7eb441514b3912&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;JacquelineAKelly@hotmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Jacqueline&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Kelly&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01442 257609&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57ddaac77a7eb441514b3913&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Catherine &quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Scott&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;0207 589 1377&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57dede5e7a7eb441514b3914&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;only.jay1971@gmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Janis&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Dieterhart&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;N/a&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57dedf1c7a7eb441514b3915&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;n/a&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Phillipa &amp; Damian &quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Keeling &quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;+44 7929 616378&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e2aa4f7cc07e53dbda7121&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;cathycymru@hotmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Cathy&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Davies&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07975907860&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e2ab2c7cc07e53dbda7122&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;andreafitzwilliam@hotmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Andrea&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Fitzwilliam&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;077&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e301007cc07e53dbda7123&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;rnmorris55@gmail.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Nick&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Morris&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07505904987&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;57e3015c7cc07e53dbda7124&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;morrisfamily@john-lewis.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Deirdre&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Morris&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07742016006&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;580394227662aef9ded7cfa2&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;marvin.severin@blueyonder.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Marvin (female)&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Severin&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07766 059 277&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5805e67c7662aef9ded7cfa3&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;john@tangney-tours.com&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;John&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Tangney&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;01732886666&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5806857d7662aef9ded7cfa4&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;patrickneal@hotmail.co.uk&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Patrick&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Neal&quot;,[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07879256276&quot;[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.430 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;&quot; : &quot;580a04527662aef9ded7cfa5&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;catherinetheresescott@gmail.com&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Catherine&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Scott&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;02075891377&quot;[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;581083952730568648afa586&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;mconmee@gmail.com&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Monica&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Conmee&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;07713637953&quot;[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587a9513fbce690014981889&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587a9618fbce69001498188a&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.529 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;587abfeafbce69001498188b&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5880eb1efbce69001498188c&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588118e29f0ae10014790e3f&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588119449f0ae10014790e40&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588119f29f0ae10014790e41&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5881318a3392b9000d1e28d8&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825962a518db000e9c76ee&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5882598aa518db000e9c76ef&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825a6b651bcc000e233fc6&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825a86651bcc000e233fc7&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58825bfc651bcc000e233fc8&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58826067651bcc000e233fc9&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;588275cc651bcc000e233fca&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58827720651bcc000e233fcb&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;58832bf0651bcc000e233fcc&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;}, {[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;id&quot; : &quot;5883396e651bcc000e233fcd&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;email&quot; : &quot;Rest Test Email&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;firstName&quot; : &quot;Rest Test Firstname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;lastName&quot; : &quot;Rest Test Lastname&quot;,[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;  &quot;contactMobile&quot; : &quot;Rest Test Mobile&quot;[\n]&quot;
+10:35:27.530 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;} ]&quot;
+10:35:27.531 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.531 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;0[\r][\n]&quot;
+10:35:27.531 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 &lt;&lt; &quot;[\r][\n]&quot;
+10:35:27.531 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80] can be kept alive indefinitely
+10:35:27.531 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}-&gt;http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+10:35:27.531 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.531 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 2]
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+10:35:27.531 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+10:35:27.531 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.531 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 2]
+10:35:27.532 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+10:35:27.532 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@34c4e7c4 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 2]
+10:35:27.532 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = test.frank.bogle.restapi.RestTest@12fccc6c, testMethod = testMultipleGetPersons@RestTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+10:35:27.532 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@2962d191 testClass = RestTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3536da0c testClass = RestTest, locations = '{}', classes = '{class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@69df7d87, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@722166e6], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.14</a> at Jan 21, 2017 10:35:27 AM</p>
+</div>
+</div>
+</body>
+</html>

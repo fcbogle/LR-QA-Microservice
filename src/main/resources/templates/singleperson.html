@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/frank-theme.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Person Page</h1>
+    </div>
+
+    <div data-role="content" data-theme="a">
+
+        <h3>LR Profile:
+            <span th:text=" ${person.firstName} + ' ' +${person.lastName}"></span></h3>
+
+        <form>
+            <fieldset>
+                <label for="username">Username</label>
+                <input type="text" th:field="${person.email}" th:readonly="true" id="username" data-mini="true" />
+                <br/>
+
+                <label for="password">Password</label>
+                <input type="password" th:field="${person.password}" th:readonly="true" id="password" data-mini="true" />
+                <br/>
+
+                <label for="first">First Name</label>
+                <input type="text" th:field="${person.firstName}" th:readonly="true" id="first" data-mini="true" />
+                <br/>
+
+                <label for="last">Last Name</label>
+                <input type="text" th:field="${person.lastName}" th:readonly="true" id="last" data-mini="true" />
+                <br/>
+
+                <label for="con">Contact</label>
+                <input type="text" th:field="${person.contactMobile}" th:readonly="true" id="con" data-mini="true" />
+                <br/>
+            </fieldset>
+        </form>
+
+        <div th:include="_links :: security" />
+
+        <div data-role="content" th:include="_links :: nav" />
+
+    </div>
+
+    <div data-role="footer" data-theme="a">
+        <h5><small>&copy; digitalPilgrim 2016 Ltd</small></h5>
+    </div>
+
+</div>
+
+</body>
+</html>
