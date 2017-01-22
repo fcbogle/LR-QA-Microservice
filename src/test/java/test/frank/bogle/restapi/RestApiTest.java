@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -33,8 +34,10 @@ public class RestApiTest {
 
     @Test
     public void testRestApiRegister() {
-        ResponseEntity<String> response = this.testRestApi.registerRestApi();
-        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        ResponseEntity<Person> response = this.testRestApi.registerRestApi();
+        Person person = response.getBody();
+        assertNotNull(person);
+        assertEquals(response.getStatusCode(), HttpStatus.CREATED);
     }
 
     @Test

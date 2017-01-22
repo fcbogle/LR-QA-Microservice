@@ -3,10 +3,9 @@ package org.frank.bogle.rest;
 import org.frank.bogle.model.LRPerson;
 import org.frank.bogle.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -30,19 +29,18 @@ public class TestRestApi {
         String uri = "http://yapreunion30.cfapps.io/getrestpersons";
         ResponseEntity<Person[]> response = restTemplate.getForEntity(uri, Person[].class);
         Person[] persons = response.getBody();
-        HttpHeaders header = response.getHeaders();
         return persons;
     }
 
-    public ResponseEntity<String> registerRestApi() {
-        String uri = "http://yapreunion30.cfapps.io/register";
+    public ResponseEntity<Person> registerRestApi() {
+        String uri = "http://yapreunion30.cfapps.io/registernew";
         Person person = new Person();
-        person.setEmail("Rest Test Email");
-        person.setFirstName("Rest Test Firstname");
-        person.setLastName("Rest Test Lastname");
-        person.setContactMobile("Rest Test Mobile");
+        person.setEmail("Rest2 Test2 Email");
+        person.setFirstName("Rest2 Test2 Firstname");
+        person.setLastName("Rest2 Test2 Lastname");
+        person.setContactMobile("Rest2 Test2 Mobile");
 
-        ResponseEntity<String> response = restTemplate.postForEntity(uri, person, String.class);
+        ResponseEntity<Person> response = restTemplate.postForEntity(uri, person, Person.class);
 
         return response;
     }
