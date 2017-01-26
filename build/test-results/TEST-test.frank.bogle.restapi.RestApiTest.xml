@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.frank.bogle.restapi.RestApiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-01-22T09:49:37" hostname="Franks-iMac.home" time="0.806">
+  <properties/>
+  <testcase name="testRestSinglePerson" classname="test.frank.bogle.restapi.RestApiTest" time="0.499"/>
+  <testcase name="testRestApiRegister" classname="test.frank.bogle.restapi.RestApiTest" time="0.15"/>
+  <testcase name="testAllPersonsRetrieve" classname="test.frank.bogle.restapi.RestApiTest" time="0.154"/>
+  <system-out><![CDATA[09:49:36.312 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class test.frank.bogle.restapi.RestApiTest]
+09:49:36.317 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:49:36.322 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:49:36.329 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [test.frank.bogle.restapi.RestApiTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+09:49:36.350 [Test worker] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@52e78ca6 declaringClass = 'test.frank.bogle.restapi.RestApiTest', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+09:49:36.392 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.393 [Test worker] DEBUG org.springframework.test.context.support.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [test.frank.bogle.restapi.RestApiTest]: using defaults.
+09:49:36.397 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+09:49:36.412 [Test worker] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5b8f9fc6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f1fc4d3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@332237d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4510d004, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62c606cf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23be7f18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1007837, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@425308e3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@10718e18, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@406765b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@42247c4a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@18ea70fd]
+09:49:36.415 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.415 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.416 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.416 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.419 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+09:49:36.419 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.419 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestApiTest]
+09:49:36.420 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@e718c7c, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+09:49:36.421 [Test worker] DEBUG org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+09:49:36.421 [Test worker] DEBUG org.springframework.test.context.support.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+09:49:36.471 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+09:49:36.471 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+09:49:36.472 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+09:49:36.472 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoader - Registering annotated classes: {class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}
+09:49:36.502 [Test worker] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@62ef8bc9: startup date [Sun Jan 22 09:49:36 GMT 2017]; root of context hierarchy
+09:49:36.502 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Bean factory for org.springframework.context.support.GenericApplicationContext@62ef8bc9: org.springframework.beans.factory.support.DefaultListableBeanFactory@580418d6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,testRestApi,restConfig,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor]; root of factory hierarchy
+09:49:36.510 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:36.510 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:36.522 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+09:49:36.523 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:36.544 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method org.frank.bogle.config.RestConfig.builder()
+09:49:36.544 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method org.frank.bogle.config.RestConfig.restTemplate()
+09:49:36.609 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassEnhancer - Successfully enhanced org.frank.bogle.config.RestConfig; enhanced class name is: org.frank.bogle.config.RestConfig$$EnhancerBySpringCGLIB$$f21ecaa8
+09:49:36.609 [Test worker] DEBUG org.springframework.context.annotation.ConfigurationClassPostProcessor - Replacing bean definition 'restConfig' existing class 'org.frank.bogle.config.RestConfig' with enhanced class 'org.frank.bogle.config.RestConfig$$EnhancerBySpringCGLIB$$f21ecaa8'
+09:49:36.609 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:36.609 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:36.623 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor' to allow for resolving potential circular references
+09:49:36.623 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:36.625 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:36.625 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:36.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:36.629 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+09:49:36.629 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:36.629 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:36.629 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:36.630 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+09:49:36.630 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:36.631 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:36.631 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:36.636 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor' to allow for resolving potential circular references
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:36.637 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:36.638 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+09:49:36.638 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:36.638 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:36.638 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer$PropertyMappingCheckBeanPostProcessor'
+09:49:36.639 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@73c0e5b1]
+09:49:36.640 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@46c18dee]
+09:49:36.641 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@580418d6: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,testRestApi,restConfig,org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,builder,restTemplate]; root of factory hierarchy
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:36.642 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:36.647 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+09:49:36.658 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:36.658 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:36.658 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:36.658 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+09:49:36.660 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:36.660 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'testRestApi'
+09:49:36.660 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'testRestApi'
+09:49:36.663 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'restTemplate'
+09:49:36.663 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'restTemplate'
+09:49:36.664 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'restConfig'
+09:49:36.664 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'restConfig'
+09:49:36.664 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'restConfig' to allow for resolving potential circular references
+09:49:36.667 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'restConfig'
+09:49:36.677 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'builder'
+09:49:36.677 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'builder'
+09:49:36.677 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:36.679 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'builder' to allow for resolving potential circular references
+09:49:36.684 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'builder'
+09:49:37.068 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'restTemplate' to allow for resolving potential circular references
+09:49:37.090 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'restTemplate'
+09:49:37.090 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Autowiring by type from bean name 'testRestApi' via constructor to bean named 'restTemplate'
+09:49:37.090 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'testRestApi' to allow for resolving potential circular references
+09:49:37.091 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'testRestApi'
+09:49:37.091 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.091 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.092 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.110 [Test worker] DEBUG org.springframework.context.support.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@611070db]
+09:49:37.111 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+09:49:37.113 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+09:49:37.114 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.114 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+09:49:37.117 [Test worker] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'test.frank.bogle.restapi.RestApiTest': AutowiredFieldElement for private org.frank.bogle.rest.TestRestApi test.frank.bogle.restapi.RestApiTest.testRestApi
+09:49:37.117 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.118 [Test worker] DEBUG org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'test.frank.bogle.restapi.RestApiTest' to bean named 'testRestApi'
+09:49:37.121 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@e718c7c, testMethod = testRestSinglePerson@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.124 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.124 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+09:49:37.125 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.138 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.139 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.152 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://yapreunion30.cfapps.io/person/5799f02c3b7a1f0f276f6da7"
+09:49:37.185 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+09:49:37.192 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+09:49:37.199 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:49:37.201 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+09:49:37.245 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.246 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://yapreunion30.cfapps.io:80
+09:49:37.295 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to yapreunion30.cfapps.io/52.0.39.96:80
+09:49:37.395 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.64:53073<->52.0.39.96:80
+09:49:37.396 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /person/5799f02c3b7a1f0f276f6da7 HTTP/1.1
+09:49:37.396 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+09:49:37.396 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /person/5799f02c3b7a1f0f276f6da7 HTTP/1.1
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: yapreunion30.cfapps.io
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)
+09:49:37.398 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /person/5799f02c3b7a1f0f276f6da7 HTTP/1.1[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: yapreunion30.cfapps.io[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+09:49:37.398 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+09:49:37.589 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+09:49:37.589 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+09:49:37.589 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+09:49:37.589 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 22 Jan 2017 09:49:37 GMT[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c; Path=/; HttpOnly[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292;path=/;HttpOnly[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Application-Context: yapreunion30:cloud:0[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Vcap-Request-Id: 27cca8d4-ac49-4552-5c41-8a8bada6a7b0[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 167[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{[\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5799f02c3b7a1f0f276f6da7",[\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "realucy@yahoo.co.uk",[\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Lucy",[\n]"
+09:49:37.590 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Bennett nee rea",[\n]"
+09:49:37.591 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07971461917"[\n]"
+09:49:37.591 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}"
+09:49:37.592 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 302 Found
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 22 Jan 2017 09:49:37 GMT
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c; Path=/; HttpOnly
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292;path=/;HttpOnly
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Application-Context: yapreunion30:cloud:0
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Vcap-Request-Id: 27cca8d4-ac49-4552-5c41-8a8bada6a7b0
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+09:49:37.593 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 167
+09:49:37.594 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+09:49:37.597 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:49:37.600 [Test worker] DEBUG org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [__VCAP_ID__="b0eef651-9c44-4d8d-7868-abff9e77109c", version:0, domain:yapreunion30.cfapps.io, path:/, expiry:null]
+09:49:37.601 [Test worker] DEBUG org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted [JSESSIONID="376CFC6E7189562EE4CE9F5E2645F292", version:0, domain:yapreunion30.cfapps.io, path:/, expiry:null]
+09:49:37.603 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://yapreunion30.cfapps.io/person/5799f02c3b7a1f0f276f6da7" resulted in 302 (Found)
+09:49:37.603 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class org.frank.bogle.model.Person] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7c18cb19]
+09:49:37.611 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://yapreunion30.cfapps.io:80] can be kept alive indefinitely
+09:49:37.612 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.613 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.613 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.614 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.616 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.616 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.617 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+09:49:37.617 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.617 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+09:49:37.618 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@e718c7c, testMethod = testRestSinglePerson@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.619 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestApiTest]
+09:49:37.620 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestApiTest]
+09:49:37.620 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@636caaa7, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+09:49:37.620 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.620 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+09:49:37.621 [Test worker] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'test.frank.bogle.restapi.RestApiTest': AutowiredFieldElement for private org.frank.bogle.rest.TestRestApi test.frank.bogle.restapi.RestApiTest.testRestApi
+09:49:37.621 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.622 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@636caaa7, testMethod = testRestApiRegister@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.625 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.625 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+09:49:37.625 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.625 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.625 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.626 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.627 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.630 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created POST request for "http://yapreunion30.cfapps.io/registernew"
+09:49:37.630 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+09:49:37.637 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Writing [Person{id='null', email='Rest2 Test2 Email', firstName='Rest2 Test2 Firstname', lastName='Rest2 Test2 Lastname', contactMobile='Rest2 Test2 Mobile'}] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7c18cb19]
+09:49:37.643 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+09:49:37.649 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 376CFC6E7189562EE4CE9F5E2645F292][domain: yapreunion30.cfapps.io][path: /][expiry: null] match [yapreunion30.cfapps.io:80/registernew]
+09:49:37.649 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: __VCAP_ID__][value: b0eef651-9c44-4d8d-7868-abff9e77109c][domain: yapreunion30.cfapps.io][path: /][expiry: null] match [yapreunion30.cfapps.io:80/registernew]
+09:49:37.650 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:49:37.650 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.651 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.651 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /registernew HTTP/1.1
+09:49:37.651 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+09:49:37.651 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /registernew HTTP/1.1
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json;charset=UTF-8
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 146
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: yapreunion30.cfapps.io
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292; __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c
+09:49:37.651 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+09:49:37.652 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /registernew HTTP/1.1[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json;charset=UTF-8[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 146[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: yapreunion30.cfapps.io[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292; __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+09:49:37.653 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+09:49:37.654 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"id":null,"email":"Rest2 Test2 Email","firstName":"Rest2 Test2 Firstname","lastName":"Rest2 Test2 Lastname","contactMobile":"Rest2 Test2 Mobile"}"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 22 Jan 2017 09:49:37 GMT[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Application-Context: yapreunion30:cloud:0[\r][\n]"
+09:49:37.767 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Vcap-Request-Id: 3b87d85a-774d-496f-7ff2-bd4d5e7fbc04[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 126[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58848031468463000eb95f7a",[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : null,[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : null,[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : null,[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : null[\n]"
+09:49:37.768 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}"
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 201 Created
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 22 Jan 2017 09:49:37 GMT
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Application-Context: yapreunion30:cloud:0
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Vcap-Request-Id: 3b87d85a-774d-496f-7ff2-bd4d5e7fbc04
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 126
+09:49:37.768 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+09:49:37.768 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:49:37.768 [Test worker] DEBUG org.springframework.web.client.RestTemplate - POST request for "http://yapreunion30.cfapps.io/registernew" resulted in 201 (Created)
+09:49:37.768 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class org.frank.bogle.model.Person] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7c18cb19]
+09:49:37.769 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://yapreunion30.cfapps.io:80] can be kept alive indefinitely
+09:49:37.769 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.769 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.769 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.769 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.770 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.770 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.770 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+09:49:37.770 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.770 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+09:49:37.771 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@636caaa7, testMethod = testRestApiRegister@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.771 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.frank.bogle.restapi.RestApiTest]
+09:49:37.771 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.frank.bogle.restapi.RestApiTest]
+09:49:37.771 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@716c6366, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+09:49:37.771 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.771 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+09:49:37.771 [Test worker] DEBUG org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'test.frank.bogle.restapi.RestApiTest': AutowiredFieldElement for private org.frank.bogle.rest.TestRestApi test.frank.bogle.restapi.RestApiTest.testRestApi
+09:49:37.771 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.772 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@716c6366, testMethod = testAllPersonsRetrieve@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.772 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.773 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.773 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.773 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://yapreunion30.cfapps.io/getrestpersons"
+09:49:37.774 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+09:49:37.775 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+09:49:37.775 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 376CFC6E7189562EE4CE9F5E2645F292][domain: yapreunion30.cfapps.io][path: /][expiry: null] match [yapreunion30.cfapps.io:80/getrestpersons]
+09:49:37.775 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: __VCAP_ID__][value: b0eef651-9c44-4d8d-7868-abff9e77109c][domain: yapreunion30.cfapps.io][path: /][expiry: null] match [yapreunion30.cfapps.io:80/getrestpersons]
+09:49:37.775 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:49:37.775 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.775 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.775 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /getrestpersons HTTP/1.1
+09:49:37.775 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+09:49:37.775 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /getrestpersons HTTP/1.1
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: yapreunion30.cfapps.io
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292; __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c
+09:49:37.775 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /getrestpersons HTTP/1.1[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: yapreunion30.cfapps.io[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_101)[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Cookie: JSESSIONID=376CFC6E7189562EE4CE9F5E2645F292; __VCAP_ID__=b0eef651-9c44-4d8d-7868-abff9e77109c[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+09:49:37.775 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+09:49:37.911 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Sun, 22 Jan 2017 09:49:37 GMT[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Application-Context: yapreunion30:cloud:0[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Vcap-Request-Id: 7eb36742-62c1-4632-76c2-04b00e13d808[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Xss-Protection: 1; mode=block[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "transfer-encoding: chunked[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "25b2[\r][\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[ {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "578ff89291963c22d26659df",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "fcbogle@gmail.com",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Frank",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Bogle",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07714711103"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5790af7791963c22d26659e0",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "vladimirfelzmann@rcdow.org.uk",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "vladimir",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "felzmann",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "020 8981 9697"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57910afe91963c22d26659e1",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "fionamab@tiscali.co.uk",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Fiona",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Bogle",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07881902489"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5798a064bb0646b2049112fe",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "jmcmahon059@aol.com",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Julie",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "McMahon",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "2077989381"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57992f483b7a1f0f276f6da3",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "moloneyanne@hotmail.com",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Anne ",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Moloney",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07985943169"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "579937423b7a1f0f276f6da4",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "william.carson@ldblondon.com",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "William",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Carson",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07734220058"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5799b1b53b7a1f0f276f6da5",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "rjmvidal@btinternet.com",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Royer",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Vidal",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07760380313"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5799f02b3b7a1f0f276f6da6",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "realucy@yahoo.co.uk",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Lucy",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Bennett nee rea",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07971461917"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5799f02c3b7a1f0f276f6da7",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "realucy@yahoo.co.uk",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Lucy",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Bennett nee rea",[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07971461917"[\n]"
+09:49:37.912 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "579e2d5c3b7a1f0f276f6da8",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "elizabethsimpson90@hotmail.com",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Liz",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Simpson",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "077661 98661"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "579fc99a3b7a1f0f276f6da9",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "alanjryan@me.com",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Alan",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Ryan",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07795418468"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57b72c95af46f1736a7b9c36",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "vtowers@tiscali.co.uk",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Veronica",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Towers",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "0208 767 3796"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57c31a9063a627ba38791b19",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "barbara@gompels.com",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Barbara",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Gompels",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07738131451"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57c3d7b663a627ba38791b1a",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "wiffywillis@gmail.com",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rosie",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Willis",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07957571199"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57c5439263a627ba38791b1b",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "familywalsh@uwclub.net",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "David ",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Walsh",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "01892 545058"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57c57e2a63a627ba38791b1c",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "realucy@yahoo.co.uk",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Lucy",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rea",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07971461917"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57cfbd34a5ce74d19de4fcb6",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "n/a",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Joyce",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Eidiale",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07570 631902"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57d1d5a840d83c007ea2d5b7",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "tony.davids@ntlworld.com",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Tony",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Davids",[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07976278203"[\n]"
+09:49:37.913 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57d1d5a840d83c007ea2d5b8",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "tony.davids@ntlworld.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Tony",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Davids",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07976278203"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57d54b497a7eb441514b3910",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Clairejmbetts@aol.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Claire",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Betts",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07999481738"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57d641887a7eb441514b3911",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "elizabethsimpson90@hotmail.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Liz",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Simpson",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "077661 98661"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57d683457a7eb441514b3912",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "JacquelineAKelly@hotmail.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Jacqueline",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Kelly",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "01442 257609"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57ddaac77a7eb441514b3913",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "n/a",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Catherine ",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Scott",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "0207 589 1377"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57dede5e7a7eb441514b3914",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "only.jay1971@gmail.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Janis",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Dieterhart",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "N/a"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57dedf1c7a7eb441514b3915",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "n/a",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Phillipa & Damian ",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Keeling ",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "+44 7929 616378"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57e2aa4f7cc07e53dbda7121",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "cathycymru@hotmail.com",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Cathy",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Davies",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07975907860"[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57e2ab2c7cc07e53dbda7122",[\n]"
+09:49:37.914 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "andreafitzwilliam@hotmail.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Andrea",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Fitzwilliam",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "077"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57e301007cc07e53dbda7123",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "rnmorris55@gmail.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Nick",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Morris",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07505904987"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "57e3015c7cc07e53dbda7124",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "morrisfamily@john-lewis.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Deirdre",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Morris",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07742016006"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "580394227662aef9ded7cfa2",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "marvin.severin@blueyonder.co.uk",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Marvin (female)",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Severin",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07766 059 277"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5805e67c7662aef9ded7cfa3",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "john@tangney-tours.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "John",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Tangney",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "01732886666"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5806857d7662aef9ded7cfa4",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "patrickneal@hotmail.co.uk",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Patrick",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Neal",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07879256276"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "580a04527662aef9ded7cfa5",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "catherinetheresescott@gmail.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Catherine",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Scott",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "02075891377"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "581083952730568648afa586",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "mconmee@gmail.com",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Monica",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Conmee",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "07713637953"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "587a9513fbce690014981889",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "587a9618fbce69001498188a",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "587abfeafbce69001498188b",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5880eb1efbce69001498188c",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "588118e29f0ae10014790e3f",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "588119449f0ae10014790e40",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : ""
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 302 Found
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Sun, 22 Jan 2017 09:49:37 GMT
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Application-Context: yapreunion30:cloud:0
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Vcap-Request-Id: 7eb36742-62c1-4632-76c2-04b00e13d808
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Xss-Protection: 1; mode=block
+09:49:37.916 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << transfer-encoding: chunked
+09:49:37.917 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+09:49:37.918 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:49:37.918 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://yapreunion30.cfapps.io/getrestpersons" resulted in 302 (Found)
+09:49:37.918 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class [Lorg.frank.bogle.model.Person;] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7c18cb19]
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "588119f29f0ae10014790e41",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5881318a3392b9000d1e28d8",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58825962a518db000e9c76ee",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5882598aa518db000e9c76ef",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58825a6b651bcc000e233fc6",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58825a86651bcc000e233fc7",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58825bfc651bcc000e233fc8",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58826067651bcc000e233fc9",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "588275cc651bcc000e233fca",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58827720651bcc000e233fcb",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58832bf0651bcc000e233fcc",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5883396e651bcc000e233fcd",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "588386c1651bcc000e233fce",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest Test Email",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest Test Firstname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest Test Lastname",[\n]"
+09:49:37.923 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest Test Mobile"[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5883dda5886cd2000edd3479",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : "Rest2 Test2 Email",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : "Rest2 Test2 Firstname",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : "Rest2 Test2 Lastname",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : "Rest2 Test2 Mobile"[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "5883df89468463000eb95f79",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : null[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "}, {[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "id" : "58848031468463000eb95f7a",[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "email" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "firstName" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "lastName" : null,[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "  "contactMobile" : null[\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "} ]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+09:49:37.924 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://yapreunion30.cfapps.io:80] can be kept alive indefinitely
+09:49:37.924 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://yapreunion30.cfapps.io:80][total kept alive: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testRestApi'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restConfig'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'builder'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'restTemplate'
+09:49:37.925 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+09:49:37.925 [Test worker] DEBUG org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@486603fc size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+09:49:37.926 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = test.frank.bogle.restapi.RestApiTest@716c6366, testMethod = testAllPersonsRetrieve@RestApiTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+09:49:37.926 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@4f1772a2 testClass = RestApiTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@14e0278a testClass = RestApiTest, locations = '{}', classes = '{class org.frank.bogle.rest.TestRestApi, class org.frank.bogle.config.RestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@55a2b05f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46f39698], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
