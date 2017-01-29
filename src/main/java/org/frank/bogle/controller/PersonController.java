@@ -6,6 +6,7 @@ import org.frank.bogle.utilities.TestRestUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +38,7 @@ public class PersonController {
 
     @RequestMapping(value = "/person/{id}", method = RequestMethod.GET)
     public ModelAndView getSinglePerson(@PathVariable String id) {
-        logger.info("RegisteredAdminController method getAdminPerson invoked: " + LocalDateTime.now());
+        logger.info("RegisteredAdminController method getSinglePerson invoked: " + LocalDateTime.now());
         final Person person = this.testRestApi.singlePerson(id);
         return new ModelAndView("singleperson")
                 .addObject("person", person)

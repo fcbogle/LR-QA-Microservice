@@ -46,5 +46,19 @@ public class RestApiTest {
         assertNotNull(person);
     }
 
+    @Test
+    public void testPersonEdit() {
+        final Person person = new Person();
+        person.setFirstName("Francis Edit");
+        person.setLastName("Bogle Edit");
+        person.setContactMobile("07713 752 791");
+        person.setEmail("fcbogle@gmail.com");
+
+        ResponseEntity<Person> response = this.testRestApi.postUpdatedPerson("588d09c8f4990e000e3e7c28", person);
+        assertNotNull(person);
+        assertEquals(response.getStatusCode(), HttpStatus.CREATED);
+
+    }
+
 
 }

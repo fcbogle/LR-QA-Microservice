@@ -34,15 +34,31 @@ public class TestRestApi {
 
     public ResponseEntity<Person> registerRestApi() {
         String uri = "http://yapreunion30.cfapps.io/registernew";
-        Person person = new Person();
-        person.setEmail("Rest2 Test2 Email");
-        person.setFirstName("Rest2 Test2 Firstname");
-        person.setLastName("Rest2 Test2 Lastname");
-        person.setContactMobile("Rest2 Test2 Mobile");
+        final Person person = new Person();
+        person.setEmail("New Person Email");
+        person.setFirstName("New Person Firstname");
+        person.setLastName("New Person Lastname");
+        person.setContactMobile("07714711103");
 
         ResponseEntity<Person> response = restTemplate.postForEntity(uri, person, Person.class);
 
         return response;
+    }
+
+    public ResponseEntity<Person> postUpdatedPerson(String id, Person person) {
+       String uri = UriComponentsBuilder.newInstance()
+               .scheme("http")
+               .host("yapreunion30.cfapps.io")
+               .path("/person/{id}/edit")
+               .build()
+               .expand(id)
+               .toUriString();
+
+       HttpEntity<Person> entity = new HttpEntity<>(person);
+
+       ResponseEntity<Person> response = restTemplate.exchange(uri, HttpMethod.PUT, entity, Person.class);
+
+       return response;
     }
 
     public Person singlePerson(String id) {
