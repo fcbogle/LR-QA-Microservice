@@ -47,6 +47,7 @@ public class ContextConfig {
         //System.out.println(Arrays.asList(context.getBeanDefinitionNames()));
     }
 
+    /**
     @PostConstruct
     public void createSamplePerson() {
 
@@ -85,5 +86,6 @@ public class ContextConfig {
         }
 
     }
+    **/
 
 }

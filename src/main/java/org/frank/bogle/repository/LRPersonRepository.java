@@ -16,4 +16,6 @@ public interface LRPersonRepository extends MongoRepository<LRPerson, String> {
 
     public List<LRPerson> findByLastName(String lastName);
 
+    public LRPerson findByEmail(String email);
+
 }

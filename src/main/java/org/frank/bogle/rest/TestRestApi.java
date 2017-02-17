@@ -26,7 +26,7 @@ public class TestRestApi {
     }
 
     public Person[] apiAllPeople() {
-        String uri = "http://yapreunion30.cfapps.io/getrestpersons";
+        String uri = "http://yapreunion30.cfapps.io/getallpersons";
         ResponseEntity<Person[]> response = restTemplate.getForEntity(uri, Person[].class);
         Person[] persons = response.getBody();
         return persons;

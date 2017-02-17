@@ -26,12 +26,8 @@
 
         <form>
             <fieldset>
-                <label for="username">Username</label>
-                <input type="text" th:field="${person.email}" th:readonly="true" id="username" data-mini="true" />
-                <br/>
-
-                <label for="password">Password</label>
-                <input type="password" th:field="${person.password}" th:readonly="true" id="password" data-mini="true" />
+                <label for="email">Email</label>
+                <input type="text" th:field="${person.email}" th:readonly="true" id="email" data-mini="true" />
                 <br/>
 
                 <label for="first">First Name</label>
@@ -42,9 +38,10 @@
                 <input type="text" th:field="${person.lastName}" th:readonly="true" id="last" data-mini="true" />
                 <br/>
 
-                <label for="con">Contact</label>
-                <input type="text" th:field="${person.contactMobile}" th:readonly="true" id="con" data-mini="true" />
+                <label for="contact">Contact Number</label>
+                <input type="text" th:field="${person.contactMobile}" th:readonly="true" id="contact" data-mini="true" />
                 <br/>
+
             </fieldset>
         </form>
 

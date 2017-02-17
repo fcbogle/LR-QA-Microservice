@@ -5,6 +5,8 @@ import org.frank.bogle.repository.LRPersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,5 +47,17 @@ public class LRPersonService {
         logger.info("LRPersonService method getAllPersons() invoked: " + LocalDateTime.now());
         List<LRPerson> persons = this.lrPersonRepository.findAll();
         return persons;
+    }
+
+    public LRPerson findLRPersonByEmail(String email){
+        logger.info("LRPersonService method findLRPersonByEmail() invoked: " + LocalDateTime.now());
+        LRPerson lrPerson = this.lrPersonRepository.findByEmail(email);
+        return lrPerson;
+    }
+
+    public String getAccountPrincipal() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Object principal = authentication.getPrincipal();
+        return principal.toString();
     }
 }

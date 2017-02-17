@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-    <!--/*/ <th:block th:include="fragments/head :: head"/> /*/-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="css/LR-Bos-Theme.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
+
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="box col-md-6 col-md-offset-3">
-            <div class="stormpath-header">
-                <img src="https://stormpath.com/images/template/logo-nav.png"/>
-            </div>
 
-            <h1 th:inline="text">Hello, Admin</h1>
+<div data-role="page" id="home">
 
-            <a href="/" class="btn btn-primary">Go Home</a>
-        </div>
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Home Panel</h1>
+        <a th:href="@{/adminhome}" data-icon="home" data-iconpos="notext"></a>
     </div>
+
+    <div data-role="content" data-theme="a">
+
+        <h3>Admin :
+            <span th:text="${person.firstName} + ' ' +${person.lastName}"></span></h3>
+
+        <br/>
+
+        <ul data-role="listview">
+            <li><a th:href="@{/adminallpeople}">View all people</a></li>
+            <li><a th:href="@{/adminallanswer}">Answered questions</a></li>
+            <li><a th:href="@{/adminallunanswer}">Unanswered questions</a></li>
+        </ul>
+    </div>
+
+    <div th:include="_links :: security" />
+
+    <div data-role="footer" data-theme="a">
+        <h5><small>&copy; digitalPilgrim 2016 Ltd</small></h5>
+    </div>
+
 </div>
+
 </body>
 </html>

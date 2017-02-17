@@ -1,9 +1,11 @@
 package org.frank.bogle.controller;
 
 import com.stormpath.sdk.account.Account;
+import com.stormpath.sdk.client.Client;
 import com.stormpath.sdk.group.Group;
 import com.stormpath.sdk.group.GroupList;
 import com.stormpath.sdk.servlet.account.AccountResolver;
+import org.frank.bogle.service.LRPersonService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,17 +27,23 @@ public class TestController {
     @Autowired
     private AccountResolver accountResolver;
 
+    @Autowired
+    private LRPersonService personService;
+
 
     @RequestMapping("/frank")
     @PreAuthorize("hasAuthority(@roles.ADMIN)")
     public String getFrank(HttpServletRequest req) throws Exception {
         String frank;
         GroupList groups;
+        String principal = personService.getAccountPrincipal();
         if(accountResolver.hasAccount(req)) {
             Account account = accountResolver.getRequiredAccount(req);
             frank = account.getFullName();
             groups = account.getGroups();
-            logger.info("Username from Frank is :::: " + account.getUsername());
+            logger.info("Principal from TestController is: " + principal);
+            logger.info("Username from Frank " +
+                    "is :::: " + account.getUsername());
             try {
                 for (Group g : groups) {
                     logger.info("Username: " + frank + " is a member of ::: " + g.getName());

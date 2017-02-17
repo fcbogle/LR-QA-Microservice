@@ -25,7 +25,7 @@ public class TestRestUtil implements PersonUtil {
         this.testRestApi = testRestApi;
     }
 
-    @PostConstruct
+    /**@PostConstruct**/
     public void init() {
         Person[] fromApi = this.testRestApi.apiAllPeople();
         this.setRestPersons(fromApi);
